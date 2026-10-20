@@ -23,7 +23,7 @@ python 03_crossfit_models.py     # ~14 menit (2 CPU)
 python 04_fairness_metrics.py    # ~32 menit (bootstrap)
 python 05_figures.py
 ```
-File `data/*.pkl` adalah turunan microdata SKI berlisensi: jangan dibagikan publik.
+File `*.pkl` adalah turunan microdata SKI berlisensi: jangan dibagikan publik.
 
 ## Isi folder
 - `results/comparison.csv` (= `T_mitigation_summary.csv`): tabel pembanding skenario
