@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "outer_folds": 5,
+  "fold_grouping": "Primary Sampling Unit (PSU)",
+  "calibration_share_within_training_fold": 0.20,
+  "learner": "HistGradientBoostingClassifier(max_iter=300, learning_rate=0.05, max_leaf_nodes=31, min_samples_leaf=50, l2_regularization=1.0), unweighted fit",
+  "recalibration": "survey-weighted Platt (logistic) on calibration PSUs",
+  "threshold": "survey-weighted Youden J on calibration PSUs (t* = 0.205-0.215 across folds)",
+  "multicalibration": "logit patches on group x probability-bin cells; patch if |gap| > max(0.01, 2 SE_eff); cells >= 200 children; eta 0.5",
+  "bootstrap": "stratified PSU bootstrap (PSUs resampled within 970 strata); B = 1000 for M0, 500 otherwise",
+  "3T_list": "Perpres 63/2020 (62 regencies; 61 present in SKI 2023, Intan Jaya not sampled)",
+  "software": "Python 3.13.16, scikit-learn 1.9.1, pandas 3.0.5, numpy 2.5.3"
+}
