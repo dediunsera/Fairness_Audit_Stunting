@@ -1,0 +1,22 @@
+# Data privacy protection
+data/
+data/*
+*.csv
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.gz
+
+# Log files
+*.log
+
+# Python environment & cache
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
